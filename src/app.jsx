@@ -1,5 +1,5 @@
-import * as React from "react"
+import MyButton from "./components/MyButton";
 
-const ReactButton = () => (<div>Hello react</div>);
+const App = () => (<MyButton />);
 
-export default ReactButton;
+export default App;
