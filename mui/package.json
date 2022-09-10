@@ -1,0 +1,34 @@
+{
+  "name": "react-getting-started",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "main": "app.js",
+  "scripts": {
+    "clean": "npx rimraf node_modules .parcel-cache dist package-lock.json",
+    "start": "parcel --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulpatarinski/react-getting-started.git"
+  },
+  "author": "paulp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulpatarinski/react-getting-started/issues"
+  },
+  "homepage": "https://github.com/paulpatarinski/react-getting-started#readme",
+  "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mui/icons-material": "^5.10.3",
+    "@mui/material": "^5.10.4",
+    "parcel": "^2.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}
