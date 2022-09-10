@@ -2,12 +2,11 @@
   "name": "react-getting-started",
   "version": "1.0.0",
   "description": "",
+  "source": "src/index.html",
   "main": "app.js",
   "scripts": {
-    "build": "./node_modules/.bin/esbuild ./src/app.jsx --bundle --outdir=dist",
-    "watch": "./node_modules/.bin/esbuild ./src/app.jsx --bundle --outdir=dist --watch",
-    "start": "http-server dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "npx rimraf node_modules .parcel-cache dist package-lock.json",
+    "start": "parcel --open"
   },
   "repository": {
     "type": "git",
@@ -20,9 +19,12 @@
   },
   "homepage": "https://github.com/paulpatarinski/react-getting-started#readme",
   "dependencies": {
-    "esbuild": "^0.15.7",
-    "http-server": "^14.1.1",
+    "parcel": "^2.7.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
   }
 }

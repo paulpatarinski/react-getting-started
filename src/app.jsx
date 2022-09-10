@@ -1,9 +1,6 @@
 import * as React from "react"
-import { createRoot } from 'react-dom/client';
+import * as ReactDOM from "react-dom";
 
-import ReactButton from "./component";
+const ReactButton = () => (<div>Hello react 213</div>);
 
-const container = document.getElementById('reactContainer')
-const root = createRoot(container);
-
-root.render(<ReactButton />);
+export default ReactButton;
